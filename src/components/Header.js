@@ -1,7 +1,11 @@
 import React from "react";
 function Header() {
+  const onHeaderClick = (e) => {
+    e.preventDefault();
+    console.log("asdf");
+  };
   return (
-    <header>
+    <header onClick={onHeaderClick}>
       <h1>
         <a className="home" href="#">
           GamesPlay
